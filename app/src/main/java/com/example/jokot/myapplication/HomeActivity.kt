@@ -11,8 +11,8 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        initRecyclerView()
         setData()
+        initRecyclerView()
     }
 
     private fun initRecyclerView(){
@@ -22,8 +22,8 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    private fun setData(){
-        val data = listOf("Badai","Kelaparan", "Gempa", "Tsunami")
+    private fun setData() {
+        val data = listOf("Banyuwangi", "Surabaya", "Klaten", "Tegal", "Semarang")
         homeAdapter.update(data)
     }
 }
