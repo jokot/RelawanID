@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RelawanID</string>
+    <string name="username">Username...</string>
+    <string name="password">Password...</string>
+    <string name="masuk">Masuk</string>
+    <string name="belum_punya_akun">Belum Punya akun ?</string>
 </resources>
