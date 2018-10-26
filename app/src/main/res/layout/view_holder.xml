@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+    <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/ic_rectangle"
+            android:backgroundTint="@color/grey"
+            android:padding="8dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:id="@+id/linearLayout2"
+                tools:layout_editor_absoluteY="8dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:ignore="MissingConstraints">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/img_bencana"
+                    android:background="@drawable/haketone_disaster"/>
+        </LinearLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_nama_bencana"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/tv_date_bencana"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nama_bencana"/>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

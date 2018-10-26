@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">RelawanID</string>
+    <string name="username">Username...</string>
+    <string name="password">Password...</string>
+    <string name="masuk">Masuk</string>
+    <string name="belum_punya_akun">Belum Punya akun ?</string>
+    <string name="deskripsi">bla bla deskripsi bla deskripsi bla bla deskripsi bla deskripsi bla bla deskripsi bla
+        deskripsi bla bla deskripsi bla deskripsi bla bla deskripsi bla deskripsi bla bla deskripsi bla deskripsi bla
+        bla deskripsi bla deskripsi
+    </string>
+    <string name="uang">123.512.000 dari 250.000.000</string>
+
+    <string-array name="nama_bencana_dan_tempat">
+        <item>Kelaparan - FMIPA UGM</item>
+        <item>Gempa - Lombok</item>
+        <item>tsunami - palu</item>
+
+    </string-array>
+
+    <array name="bencana_image">
+        <item>@drawable/haketone_disaster</item>
+        <item>@drawable/ic_warga_selamatkan_barang</item>
+        <item>@drawable/ic_palu_devastation</item>
+
+    </array>
+
+    <string-array name="bencan_date">
+        <item>20 Oktober 2018</item>
+        <item>2 Oktober 2018</item>
+        <item>1 Oktober 2018</item>
+    </string-array>
+</resources>
