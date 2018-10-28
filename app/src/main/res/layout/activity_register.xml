@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_header"
+            android:id="@+id/imageView3"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/White">
+            <TextView
+                    android:id="@+id/subTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/keepcalm_medium"
+                    android:text="Registration"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText,UnusedAttribute"/>
+
+            <RelativeLayout
+                    android:id="@+id/container"
+                    android:layout_width="300dp"
+                    android:background="@drawable/ic_rectangle"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/subTitle">
+
+                <!--Nama Lengkap-->
+                <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="@string/nama_lengkap"
+                        android:importantForAutofill="no"
+                        style="@style/text_style"
+                        android:inputType="text"
+                        tools:ignore="LabelFor,UnusedAttribute"/>
+
+                <!--Nomor HP-->
+                <EditText
+                        android:id="@+id/noHp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="45dp"
+                        android:hint="@string/nomor_hp"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        style="@style/text_style"
+                        tools:ignore="LabelFor,UnusedAttribute"/>
+
+                <!--Nomor KTP-->
+                <EditText
+                        android:id="@+id/noKtp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="90dp"
+                        android:hint="@string/nomor_ktp"
+                        style="@style/text_style"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        tools:ignore="HardcodedText,LabelFor,UnusedAttribute"/>
+
+                <!--Tanggal Lahir-->
+                <EditText
+                        android:id="@+id/tgllahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="135dp"
+                        android:hint="@string/tanggal_lahir"
+                        style="@style/text_style"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        tools:ignore="HardcodedText,LabelFor,UnusedAttribute"/>
+
+                <!--Alamat-->
+                <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="86dp"
+                        style="@style/text_style"
+                        android:gravity="top"
+                        android:hint="@string/alamat_ktp"
+                        android:inputType="text"
+                        android:layout_marginTop="180dp"
+                        tools:ignore="Autofill,LabelFor,UnusedAttribute"/>
+                <!--Domisili-->
+                <EditText
+                        android:id="@+id/domisili"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        style="@style/text_style"
+                        android:hint="@string/domisili"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:layout_marginTop="266dp"
+                        tools:ignore="LabelFor,TextFields,UnusedAttribute"/>
+                <!--Email-->
+                <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        style="@style/text_style"
+                        android:hint="@string/email"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:layout_marginTop="321dp"
+                        tools:ignore="LabelFor,TextFields,UnusedAttribute"/>
+
+                <!--Password-->
+                <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:hint="@string/password"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        style="@style/text_style"
+                        android:layout_marginTop="366dp"
+                        tools:ignore="LabelFor,RtlHardcoded,TextFields,UnusedAttribute"/>
+            </RelativeLayout>
+
+
+            <Button
+                    android:layout_width="136dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/ic_rectangle"
+                    android:backgroundTint="@color/colorGreen"
+                    android:fontFamily="@font/keepcalm_medium"
+                    android:text="@string/registration"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/container"
+                    android:textSize="12sp"
+                    app:layout_goneMarginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    tools:ignore="UnusedAttribute"
+                    android:id="@+id/btn_registration" android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

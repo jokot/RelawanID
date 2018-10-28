@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:layout_gravity="center">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_header"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:id="@+id/imageView3"/>
+
+    <Button android:layout_width="153dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_rectangle"
+            android:backgroundTint="@color/colorGreen"
+            android:text="Transfer"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:gravity="center" tools:layout_editor_absoluteY="87dp" tools:layout_editor_absoluteX="116dp"
+            tools:ignore="MissingConstraints"/>
+    <Button android:layout_width="153dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_rectangle"
+            android:backgroundTint="@color/colorGreen"
+            android:text="Validasi Donasi"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:gravity="center" tools:layout_editor_absoluteY="239dp" tools:layout_editor_absoluteX="116dp"
+            tools:ignore="MissingConstraints"/>
+    <Button android:layout_width="153dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rectangle_white_stroke"
+            android:backgroundTint="@color/colorGreen"
+            android:text="Kembali"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+
+            android:gravity="center" tools:layout_editor_absoluteY="461dp" tools:layout_editor_absoluteX="116dp"
+            tools:ignore="MissingConstraints"/>
+
+
+</android.support.constraint.ConstraintLayout>
