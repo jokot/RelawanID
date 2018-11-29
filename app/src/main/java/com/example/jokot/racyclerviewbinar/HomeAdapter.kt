@@ -9,11 +9,11 @@ import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.view_holder.view.*
 
-class HomeAdapter(private val items: List<Item>)
-    : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class HomeAdapter(private val items: List<Item>,private val clickListener:(Item) -> Unit)
+    : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
 //    private var data = listOf<String>()
 
-    override fun onCreateViewHolder(group: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(group: ViewGroup, viewType: Int): HomeViewHolder {
         return HomeViewHolder(LayoutInflater.from(group.context).inflate(R.layout.view_holder, group, false))
     }
 
@@ -21,29 +21,22 @@ class HomeAdapter(private val items: List<Item>)
         return items.size
     }
 
-
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val viewHolder = holder as HomeViewHolder
-//        viewHolder.textNama.text = items[position]
-        viewHolder.bindItem(items[position])
-
-
-    }
-
-    override fun getItemViewType(position: Int): Int {
-        return position
+    override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
+        holder.bindItem(items[position],clickListener)
     }
 
     inner class HomeViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textNama = view.tv_nama_bencana
         val textDate = view.tv_date_bencana
 
-        fun bindItem(items: Item) {
+        fun bindItem(items: Item,clickListener: (Item) -> Unit) {
 
             textNama.text = items.name
             textDate.text = items.date
             Glide.with(itemView.context).load(items.image).into(itemView.img_bencana)
-
+            itemView.setOnClickListener {
+                clickListener(items)
+            }
         }
     }
 

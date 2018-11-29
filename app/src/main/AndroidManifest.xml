@@ -22,6 +22,10 @@
         </activity>
         <activity android:name=".DetailBencana">
         </activity>
+        <activity android:name=".ChatActivity">
+        </activity>
+        <activity android:name=".RegistrasiActivity">
+        </activity>
     </application>
 
 </manifest>

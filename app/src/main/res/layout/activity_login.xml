@@ -67,9 +67,20 @@
             android:text="@string/belum_punya_akun"
             android:layout_marginTop="20dp"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/btn_masuk" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/btn_masuk"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:id="@+id/textView6" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Register"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginTop="8dp"
+              android:textSize="16dp"
+              android:id="@+id/tv_register"
+              android:textColor="@color/colorGreen"
+              app:layout_constraintTop_toBottomOf="@+id/textView6"
+              app:layout_constraintStart_toStartOf="parent"
+              />
 
     <ImageView
             android:layout_width="match_parent"

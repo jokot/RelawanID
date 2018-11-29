@@ -143,7 +143,7 @@
 
             <Button
                     android:layout_width="136dp"
-                    android:layout_height="36dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/ic_rectangle"
                     android:backgroundTint="@color/colorGreen"
                     android:fontFamily="@font/keepcalm_medium"
@@ -156,7 +156,8 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     tools:ignore="UnusedAttribute"
-                    android:id="@+id/btn_registration" android:layout_marginTop="8dp"
+                    android:id="@+id/btn_registration"
+                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent"/>
         </android.support.constraint.ConstraintLayout>

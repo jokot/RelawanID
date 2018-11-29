@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "721633199579",
+    "firebase_url": "https://relawanid-2e813.firebaseio.com",
+    "project_id": "relawanid-2e813",
+    "storage_bucket": "relawanid-2e813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721633199579:android:c8583ac1844983ef",
+        "android_client_info": {
+          "package_name": "com.example.jokot.racyclerviewbinar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721633199579-tpqtlo27mq2nku64mtj2fjv4sa49j4o7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jokot.racyclerviewbinar",
+            "certificate_hash": "88b31483d6836c26b0c31d3bad802d7e5f282ff7"
+          }
+        },
+        {
+          "client_id": "721633199579-lsv968tv5rbm3qm6aj772itj76ph9bce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiyUXw5ova3npWhL8DbCA9sKm2CpBJaqc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721633199579-lsv968tv5rbm3qm6aj772itj76ph9bce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

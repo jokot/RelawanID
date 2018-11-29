@@ -1,5 +1,6 @@
 package com.example.jokot.racyclerviewbinar
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -18,7 +19,10 @@ class HomeActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
         with(rv_home) {
-            adapter = HomeAdapter(items)
+            adapter = HomeAdapter(items){
+                val intent = Intent(this@HomeActivity,DetailBencana::class.java)
+                context.startActivity(intent)
+            }
             layoutManager = LinearLayoutManager(this@HomeActivity)
         }
     }
