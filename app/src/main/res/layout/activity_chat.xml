@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ChatActivity"
@@ -19,15 +19,52 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-        <ScrollView
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/ic_rectangle"
+                    android:backgroundTint="@color/colorGreen"
+                    android:id="@+id/ll_1"
+                    app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/White"
+                        android:id="@+id/tv_msg1"
+                        android:text="hai"/>
+            </LinearLayout>
 
-        </ScrollView>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:id="@+id/ll_2"
+                    android:background="@drawable/ic_rectangle"
+                    android:backgroundTint="@color/colorGreen"
+                    app:layout_constraintTop_toBottomOf="@id/ll_1" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_msg2"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/White"
+                        android:text="hai"/>
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+        <!--</ScrollView>-->
 
     </LinearLayout>
     <LinearLayout
-            android:layout_gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -36,10 +73,15 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/et_tulis"
                 android:layout_height="wrap_content"/>
-        <Button android:layout_width="wrap_content"
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:background="@color/colorGreen"
                 android:text="send"
+                android:id="@+id/btn_send"
                 android:textColor="@color/White"
                 android:layout_height="wrap_content"/>
     </LinearLayout>

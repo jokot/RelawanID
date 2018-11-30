@@ -25,9 +25,9 @@
                     android:id="@+id/subTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+
                     android:fontFamily="@font/keepcalm_medium"
-                    android:text="Registration"
+                    android:text="Profile"
                     android:textColor="@color/Black"
                     android:textSize="16sp"
                     android:textStyle="normal"
@@ -39,119 +39,102 @@
             <LinearLayout
                     android:id="@+id/container"
                     android:layout_width="300dp"
-                    android:orientation="vertical"
                     android:background="@drawable/ic_rectangle"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:orientation="vertical"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/subTitle">
 
                 <!--Nama Lengkap-->
-                <EditText
+                <TextView
                         android:id="@+id/name"
                         android:layout_width="match_parent"
                         android:padding="16dp"
                         android:layout_height="wrap_content"
-                        android:hint="@string/nama_lengkap"
+                        android:text="@string/nama_lengkap"
                         android:importantForAutofill="no"
                         style="@style/text_style"
                         android:inputType="text"
-                        tools:ignore="LabelFor,UnusedAttribute"/>
+                        tools:ignore="LabelFor,UnusedAttribute" android:layout_marginTop="0dp"
+                        android:layout_alignParentTop="true"/>
 
                 <!--Nomor HP-->
-                <EditText
+                <TextView
                         android:id="@+id/noHp"
                         android:layout_width="match_parent"
                         android:padding="16dp"
                         android:layout_height="wrap_content"
-                        android:hint="@string/nomor_hp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/nomor_hp"
                         android:importantForAutofill="no"
                         android:inputType="text"
                         style="@style/text_style"
-                        tools:ignore="LabelFor,UnusedAttribute"/>
+                        tools:ignore="LabelFor,UnusedAttribute" android:layout_below="@+id/name"
+                        android:layout_alignParentStart="true" android:layout_marginStart="0dp"/>
 
                 <!--Nomor KTP-->
-                <EditText
+                <TextView
                         android:id="@+id/noKtp"
                         android:layout_width="match_parent"
                         android:padding="16dp"
                         android:layout_height="wrap_content"
-                        android:hint="@string/nomor_ktp"
+                        android:text="@string/nomor_ktp"
                         style="@style/text_style"
                         android:importantForAutofill="no"
                         android:inputType="text"
-                        tools:ignore="HardcodedText,LabelFor,UnusedAttribute"/>
+                        tools:ignore="HardcodedText,LabelFor,UnusedAttribute" android:layout_alignParentStart="true"/>
 
                 <!--Tanggal Lahir-->
-                <EditText
+                <TextView
                         android:id="@+id/tgllahir"
                         android:layout_width="match_parent"
                         android:padding="16dp"
                         android:layout_height="wrap_content"
-                        android:hint="@string/tanggal_lahir"
+                        android:text="@string/tanggal_lahir"
                         style="@style/text_style"
                         android:importantForAutofill="no"
                         android:inputType="text"
                         tools:ignore="HardcodedText,LabelFor,UnusedAttribute"/>
 
                 <!--Alamat-->
-                <EditText
+                <TextView
                         android:id="@+id/address"
                         android:layout_width="match_parent"
                         android:padding="16dp"
                         android:layout_height="wrap_content"
                         style="@style/text_style"
                         android:gravity="top"
-                        android:hint="@string/alamat_ktp"
+                        android:text="@string/alamat_ktp"
                         android:inputType="text"
-
                         tools:ignore="Autofill,LabelFor,UnusedAttribute"/>
                 <!--Domisili-->
-                <EditText
+                <TextView
                         android:id="@+id/domisili"
                         android:layout_width="match_parent"
                         android:padding="16dp"
                         android:layout_height="wrap_content"
                         style="@style/text_style"
-                        android:hint="@string/domisili"
+                        android:text="@string/domisili"
                         android:importantForAutofill="no"
                         android:inputType="text"
+
                         tools:ignore="LabelFor,TextFields,UnusedAttribute"/>
                 <!--Email-->
-                <EditText
+                <TextView
                         android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:padding="16dp"
                         android:layout_height="wrap_content"
                         style="@style/text_style"
-                        android:hint="@string/email"
+                        android:text="@string/email"
                         android:importantForAutofill="no"
                         android:inputType="text"
                         tools:ignore="LabelFor,TextFields,UnusedAttribute"/>
 
                 <!--Password-->
-                <EditText
-                        android:id="@+id/password"
-                        android:layout_width="match_parent"
-                        android:padding="16dp"
-                        android:layout_height="wrap_content"
-                        android:hint="Password"
-                        android:importantForAutofill="no"
-                        android:inputType="textPassword"
-                        style="@style/text_style"
-                        tools:ignore="LabelFor,RtlHardcoded,TextFields,UnusedAttribute"/>
 
-                <EditText
-                        android:id="@+id/confirmPassword"
-                        android:layout_width="match_parent"
-                        android:padding="16dp"
-                        android:layout_height="wrap_content"
-                        android:hint="Confirm Password"
-                        android:importantForAutofill="no"
-                        android:inputType="textPassword"
-                        style="@style/text_style"
-                        tools:ignore="LabelFor,RtlHardcoded,TextFields,UnusedAttribute"/>
             </LinearLayout>
 
 
@@ -161,7 +144,7 @@
                     android:background="@drawable/ic_rectangle"
                     android:backgroundTint="@color/colorGreen"
                     android:fontFamily="@font/keepcalm_medium"
-                    android:text="@string/registration"
+                    android:text="edit"
                     android:textColor="@color/White"
                     android:textStyle="bold"
                     app:layout_constraintTop_toBottomOf="@id/container"

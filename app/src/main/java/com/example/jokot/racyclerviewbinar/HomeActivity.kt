@@ -1,18 +1,35 @@
 package com.example.jokot.racyclerviewbinar
 
+import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.activity_register.*
 
 class HomeActivity : AppCompatActivity() {
 
     private var items: MutableList<Item> = mutableListOf()
 
+    companion object {
+        val MY_PREV_NAME= "myShared"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        val pref = getSharedPreferences(HomeActivity.MY_PREV_NAME, Context.MODE_PRIVATE)
+        val id = pref.getInt("id",0)
+
+        tv_nama.text = pref.getString("fullName$id","Anonim")
+
+        constrain.setOnClickListener {
+            val intent = Intent(this,ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
         initRecyclerView()
         initData()
     }
